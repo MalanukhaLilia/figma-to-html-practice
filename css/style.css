@@ -1,0 +1,108 @@
+html, body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+.header {
+    padding: 25px 0;
+}
+.menu {
+    max-width: 496px;
+    margin: 0 auto;
+    list-style: none;
+    
+    padding-left: 0;
+}
+nav {
+    padding-bottom: 25px;
+}
+.menu__item{
+    display: inline-block;
+    width: calc(20% - 4px);
+    text-align: center;
+}
+a {
+    color: rgba(130, 130, 130, 1);
+}
+.menu__item:first-child .menu__link {
+    color: black;
+}
+.menu__link {
+    text-decoration: none;
+    font-size: 18px;
+}
+main {
+    color: black;
+    text-align: center;
+}
+hr {
+    margin-bottom: 12px;
+}
+h1 {
+    margin: 0 auto;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 60%;
+}
+.banner {
+    width: 100%;
+    vertical-align: bottom;
+}
+h2 {
+    margin: 0 auto;
+    font-size: 34px;
+}
+.h2_about_me {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.about_me_paragraph {
+    margin-bottom: 30px;
+}
+.about_me {
+    background-color: #E5E5E5;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.background_gray__container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+p {
+    margin: 0 auto;
+} 
+.skills {
+    padding-top: 100px;
+}
+.skills_paragraph {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.skills_list {
+    display: flex;
+    gap: 96px;
+    padding-bottom: 100px;
+}
+figure {
+    margin: 0 auto;
+    display: inline-block;
+}
+figcaption {
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 14px;
+    color: #828282;
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
