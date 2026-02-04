@@ -10,7 +10,6 @@ html, body {
     max-width: 496px;
     margin: 0 auto;
     list-style: none;
-    
     padding-left: 0;
 }
 nav {
@@ -20,6 +19,10 @@ nav {
     display: inline-block;
     width: calc(20% - 4px);
     text-align: center;
+    cursor: pointer;
+}
+.menu__item:hover {
+    font-weight: bold;
 }
 a {
     color: rgba(130, 130, 130, 1);
@@ -118,10 +121,48 @@ button {
     margin-bottom: 30px;
     cursor: pointer;
 }
+button:hover {
+    background-color: gray;
+}
+button.hover_underline {
+    border: none;
+    position: relative;
+}
+button.hover_underline::after,
+button.hover_underline::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    left: 10%;
+    background: linear-gradient(to right, #ff0000, #00ffff);
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+button.hover_underline::after {
+    bottom: -5px;
+    transform-origin: right;
+}
+button.hover_underline::before {
+    top: -5px;
+    transform-origin: left;
+    background: linear-gradient(to left, #ff0000, #00ffff); 
+}
+button.hover_underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+button.hover_underline:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
 .social_networks {
     display: flex;
     justify-content: center;
     gap: 50px;
+}
+.social_networks img:hover {
+    opacity: 50%;
 }
 .contacts_paragraph {
     color: #828282;
