@@ -21,16 +21,16 @@
                         <a href class="menu__link">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a href class="menu__link">About me</a>
+                        <a href="#about_me" class="menu__link">About me</a>
                     </li>
                     <li class="menu__item">
-                        <a href class="menu__link">Skills</a>
+                        <a href="#skills" class="menu__link">Skills</a>
                     </li>
                     <li class="menu__item">
-                        <a href class="menu__link">Portfolio</a>
+                        <a href="#portfolio" class="menu__link">Portfolio</a>
                     </li>
                     <li class="menu__item">
-                        <a href class="menu__link">Contacts</a>
+                        <a href="#contacts" class="menu__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -48,7 +48,7 @@
             </div>
         </section>
 
-        <section class="about_me">
+        <section class="about_me" id="about_me">
             <div class="background_gray__container">
                 <h2>About Me</h2>
                 <p class="about_me_paragraph">Hi, I'm Denis – UX/UI designer from Minsk.<br>
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <h2 class="h2_auxiliary">Skills</h2>
                 <p class="skills_paragraph">I work in such programs as</p>
@@ -113,7 +113,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="background_gray__container">
                 <div class="container">
                     <h2>Portfolio</h2>
@@ -124,28 +124,33 @@
                 <img src="./assets/img/braun-landing.png" alt="Braun Landing Page">
                 <p class="portfolio_paragraph">Braun Landing Page - Concept</p>
                 </div>
-                
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <h2 class="h2_auxiliary">Contacts</h2>
             <p>Want to know more or just chat?<br> You are welcome!</p>
             <div>
-                <button>Send message</button>
+                <button class="hover_underline">Send message</button>
             </div>
             <div class="social_networks">
-                <img src="./assets/img/linkedin.png" alt="linkedin">
-                <img src="./assets/img/Vector.png" alt="vector">
-                <img src="./assets/img/behance.png" alt="behance">
-                <img src="./assets/img/dribbble.png" alt="dribbble">
+                <a href="#">
+                    <img src="./assets/img/linkedin.png" alt="linkedin">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/Vector.png" alt="vector">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/behance.png" alt="behance">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/dribbble.png" alt="dribbble">
+                </a>
             </div>
             <p class = "contacts_paragraph">Like me on <br>LinkedIn, Instagram, Behance, <br>Dribble</p>
         </div>
     </footer>
-
 </body>
-
 </html>
